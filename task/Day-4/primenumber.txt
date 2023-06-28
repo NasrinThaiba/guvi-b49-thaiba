@@ -1,0 +1,42 @@
+//Return all the prime numbers in an array
+
+//Anonymous function
+let a = function(prime){
+  prime = prime. filter((number) => {
+    for (var i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) 
+        return false;
+        }
+       return true;
+      });
+    console.log(prime);
+}
+a([1, 5, 7,23, 45,67,89, 22, 55, 66]);
+
+//IIFE
+(function(prime){
+  prime = prime. filter((number) => {
+    for (var i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) 
+        return false;
+        }
+       return true;
+      });
+    console.log(prime);
+})([32,54,76,89,12, 76,87, 97,13]);
+
+//arrow function
+number = (prime) => {
+  prime = prime .filter((number) => {
+    for (let i=2; i<=Math.sqrt(number); i++){
+      if(number % i === 0)
+      return false;
+    }
+    return true;
+  });
+  console.log(prime);
+}
+number([1, 5, 7,23, 45,67,89, 22, 55, 66]);
+
+
+

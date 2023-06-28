@@ -1,0 +1,39 @@
+//Convert all the strings to title caps in a string array
+
+//Anonymous function
+let a = function(string){
+  let s = "";
+  string = string. split(' ');
+  for (let i=0; i<string.length; i++){
+    string[i]= string[i]. charAt(0). toUpperCase() + string[i].slice(1);
+    s += string[i] + " ";
+  }
+  console.log(s);
+}
+a('i am nasrin thaiba');
+
+//IIFE
+(function(string){
+  let s = "";
+  string = string. split(' ');
+  for (let i=0; i<string.length; i++){
+    string[i]= string[i]. charAt(0). toUpperCase() + string[i].slice(1);
+    s += string[i] + " ";
+  }
+  console.log(s);
+  })('tamil nadu');
+
+//arrow function
+let s = "";
+string = (str) => {
+  str = str. split(' ');
+  for (let i=0; i<str.length; i++){
+    str[i] = str[i]. charAt(0). toUpperCase() + str[i].slice(1);
+    s += str[i] + " ";
+  }
+  console.log(s);
+}
+string('study tour');
+
+
+

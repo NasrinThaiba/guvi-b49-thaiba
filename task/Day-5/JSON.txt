@@ -1,0 +1,26 @@
+let jString = 
+'{"name":"nasrin","age":22, "datatype":[ "number","boolean","string","undefined","NaN"],"condition":["if", "else if", "else"], "loop":[ "for", "while", "do..while","for..in", "for..of", "for each"]}';
+
+let parsedObject = JSON.parse(jString);
+
+//for..in
+for (let key in parsedObject){
+  console.log(parsedObject[key]);
+}
+
+//for loop
+let arr = parsedObject.loop;
+for (let i =0; i<arr.length; i++){
+  console.log(arr[i]);
+}
+
+//for..of
+for (let value of parsedObject.condition){
+  console.log(value);
+}
+
+//forEach
+parsedObject.datatype.forEach(myFunction);
+function myFunction(data){
+  console.log(data, "is a datatype");
+}

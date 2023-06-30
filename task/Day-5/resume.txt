@@ -1,0 +1,52 @@
+{
+  "basics": {
+    "name": "Nasrin Thaiba ",
+    "email": "nasrinthaiba@gmail.com",
+    "phone": "(111)-123-124",
+    "degree": "B.Sc. (Hons.) Agriculture",
+    "location": {
+      "address": "5th floor, 760, Anna Salai",
+      "city": "Chennai",
+      "pinCode": "600002",
+      "region": "TamilNadu",
+      "country": "India"
+      
+    },
+    
+  
+  "education": [
+    {
+      "institution": "RVS Agricultural College",
+      "area": "Thanjavur",
+      "studyType": "Hosteller",
+      "startDate": "12/08/2018",
+      "endDate": "11/08/2022",
+      "gpa": "8.50",
+      "courses": ["Agronomy", "Horticulture", "Soil Science", "Seed Technology","Bio-technology", "Plant Breeding and Genetics","Micro-biology"]
+    }
+  ],
+  
+  "skills": [
+    {
+      "name": "Agriculture", "Calligraphy", "Programming language",
+      "level": "3-4",
+      "keywords": [
+        "python", "Javascript", "HTML", "CSS"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Tamil", "English", "Arabic",
+      "fluency": "8/10"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Craft works", "Drawing", "Calligraphy",
+      "keywords": [
+        "pencil sketch", "Arabic calligraphy"
+      ]
+    }
+  ]
+}

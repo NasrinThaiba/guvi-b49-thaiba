@@ -1,0 +1,61 @@
+class Movie {
+  constructor(title, studio, rating){
+    this.title = title;
+    this.studio = studio;
+    if(rating === "")
+    {
+      this.rating = "PG";
+    }
+    else {
+      this.rating = rating;
+    }
+  }
+  
+  get movie(){
+    return this.title;
+  }
+  get movie1(){
+    return this.studio;
+  }
+  get movie2(){
+    return this.rating;
+  }
+  
+  set movie(NewTitle){
+    this.title = NewTitle;
+  }
+  set movie1(NewStudio){
+    this.studio = NewStudio;
+  }
+  set movie2(NewRating){
+    this.rating = NewRating;
+  }
+  
+  get PG() {
+    for (let i=0; i<ipArr.length; i++){
+       if (ipArr[i]. rating === "PG"){
+       return (ipArr[i]);
+       }
+      }
+  }
+}
+
+let film = new Movie("Inside Out ", "Pixar Animation ", "R");
+let ipArr = [{title : "The Godfather", studio : "Paramount Pictures ", rating : "PG" },
+             {title : "The Gentlemen", studio : "Entertainment Film Distributors ", rating : "PG" }];
+
+console.log (film.PG);
+console.log(film.movie);
+console.log(film.movie1);
+console.log(film.movie2);
+
+film.movie = "Casino Royale";
+console.log(film.movie);
+
+film.movie = "Eon Productions"
+console.log(film.movie);
+
+film.movie = "PG13"
+console.log(film.movie);
+
+

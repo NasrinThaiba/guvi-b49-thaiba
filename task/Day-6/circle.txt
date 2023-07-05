@@ -1,0 +1,37 @@
+class Circle {
+  constructor (radius, color){
+    this.radius = radius;
+    this.color = color;
+  }
+  get Radi(){
+    return this.radius;
+  }
+  get Color(){
+    return this.color;
+  }
+  set Radi(NewRadi){
+    this.radius = NewRadi;
+  }
+  set Color(NewColor){
+    this.color = NewColor;
+  }
+  get Area(){
+    return Math.PI * this.radius * this.radius;
+  }
+  get Circumference(){
+    return 2 * Math.PI * this.radius; 
+  }
+}
+
+let objcircle = new Circle (3, "Purple");
+console.log(objcircle. Radi);
+console.log(objcircle. Color);
+
+objcircle.Color = "Red";
+console.log(objcircle. Color);
+
+objcircle.Radi = 5;
+console.log(objcircle. Area);
+console.log(objcircle. Circumference);
+
+

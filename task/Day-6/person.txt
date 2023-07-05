@@ -1,0 +1,27 @@
+class Behaviour {
+  constructor(goodAt){
+    this.Goodat = goodAt;
+  }
+  getBehave(){
+    return `The person is good in ${this.Goodat}.`
+  }
+}
+
+class Person extends Behaviour{
+  constructor(firstName, lastName, age, goodAt){
+    super(goodAt);
+    this.FName = firstName;
+    this.LName = lastName;
+    this.age = age;
+  }
+  getPerson(){
+    return `The person first name is ${this.FName} and last name is ${this.LName}. 
+  Her age is ${this.age}. she is good at ${this.Goodat}.`
+  }
+}
+
+let objperson = new Person("Nasrin", "Thaiba", 22, "talking, walking, running" )
+console.log(objperson. getPerson());
+
+let objbehave = new Behaviour("talking, walking, running");
+console.log(objbehave. getBehave());

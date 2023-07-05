@@ -1,0 +1,25 @@
+class Welcome {
+  constructor(customerName, amount){
+    this.name = customerName;
+    this.amount = amount
+  }
+  welcome(){
+    return `Hello ${this.name}, Welcome to Uber Service`
+  }
+  
+  get price(){
+    return `The price of Uber service is ${this.amount}`
+  }
+  
+  set price(Extraprice){
+    this.amount = Extraprice;
+  }
+  
+}
+
+let obj = new Welcome("Cathy", "$50");
+console.log(obj.welcome());
+console.log(obj.price);
+
+obj.price = "$70";
+console.log(obj.price);

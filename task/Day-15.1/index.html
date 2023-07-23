@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class ="container">
+        <form id ="myform">
+          <center><h1>FORM</h1></center>
+          
+    <div class="row">
+      <div class="col">
+        <label for = "name1">First Name</label>
+        <input id ="name1" type = "text" />
+      </div>
+      <div class="col">
+        <label for = "name2">Last Name</label>
+        <input id ="name2" type = "text" />
+      </div>
+    </div>
+    <div class="col">
+        <label for = "address">Address</label>
+        <input id ="address" type = "text" placeholder="1234 Main St, Apartment, studio, or floor "/>
+      </div>
+      <div class="col">
+        <label for="pincode">Pincode</label>
+        <input id = "pincode" type="number" />
+      </div>
+      <div class="col">
+        <label >Gender</label>
+        <input type="checkbox" name="gender" value="male" />Male
+        <input type="checkbox" name="gender" vallue="female"/>Female
+        <input type="checkbox" name="gender" value="others"/>Others
+      </div>
+      <div class="col">
+        <label >Choice of Food</label>
+        <input type="checkbox" name="food" value="Pizza" /> Pizza
+        <input type="checkbox" name="food" value="Burger" /> Burger
+        <input type="checkbox" name="food" value="Pasta" /> Pasta
+        <input type="checkbox" name="food" value="Sushi" /> Sushi
+        <input type="checkbox" name="food" value="Salad" /> Salad
+      </div>
+      <div class="col">
+        <label for = "state">State</label>
+        <input id ="state" type = "text" />
+      </div>
+      <div class="col">
+        <label for = "country">Country</label>
+        <input id ="country" type = "text" />
+      </div>
+
+      <div class="col">
+        <button type="submit">Submit</button>
+      </div>
+      </form>
+
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Choice of food</th>
+            <th>State</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+      </table>
+
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

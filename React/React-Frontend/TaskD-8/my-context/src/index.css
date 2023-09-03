@@ -1,0 +1,160 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.cart-item img {
+  max-width: 100px;
+}
+
+button{
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  display:inline;
+  
+}
+
+li a{
+ text-decoration: none;
+ color: black;
+ padding: 30px;
+ font-size: 25px; 
+ font-weight: bold;
+}
+
+h1{
+  font-size: 40px;
+  padding: 40px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+
+}
+
+nav{
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.cart-container {
+  max-width: 100%;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+}
+
+.item-info img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.item-info h2 {
+  font-size: 18px;
+}
+
+.item-info p {
+  font-size: 16px;
+  color: #777;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.item-quantity button {
+  font-size: 18px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.item-quantity span {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.remove-button {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.cart-summary p {
+  font-size: 18px;
+}
+
+.product-img{
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.container{
+  max-width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  
+}
+
+.product{
+  line-height: 30px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color:antiquewhite;
+}
+
+.add-button {
+  background-color: blue;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:active{
+  background-color: #ff4444;
+}
